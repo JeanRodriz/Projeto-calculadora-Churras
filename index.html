@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Churras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fogo">Calculadora de Churrasco</h1>
+        <p>Insira o número de convidados para calcular a quantidade de ingredientes necessários a serem comprados.</p>
+
+        <form id="bbq-form">
+            <div class="form-group">
+                <label for="men">
+                    <img src="imagens/images.png" alt="Homens" class="icon">
+                    <strong>Homens</strong>
+                </label>
+                <input type="number" id="men" name="men" min="0" placeholder="0" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="women">
+                    <img src="imagens/png-transparent-computer-icons-female-user-icon-design-female-hat-people-monochrome-thumbnail.png" alt="Mulheres" class="icon">
+                    <strong>Mulheres</strong>
+                </label>
+                <input type="number" id="women" name="women" min="0" placeholder="0" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="children">
+                    <img src="imagens/112-1122365_kids-icon-healthy-children-icon-clipart.png" alt="Crianças" class="icon">
+                    <strong>Crianças</strong>
+                </label>
+                <input type="number" id="children" name="children" min="0" placeholder="0" required><br>
+            </div>
+
+            <button type="button" id="calculate-btn">Calcular</button>
+        </form>
+
+        <div id="results">
+            <div class="results-header">
+                <img src="imagens/126510.png" alt="Resultados" class="results-icon">
+                <h2>Resultados</h2>
+            </div>
+            <p id="message" class="small-message"></p> <br>
+            <p id="beef-result"></p>
+            <p id="chicken-result"></p>
+            <p id="sausage-result"></p>
+            <p id="soda-result"></p>
+            <p id="beer-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
