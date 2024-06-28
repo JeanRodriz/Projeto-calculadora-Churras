@@ -74,7 +74,7 @@ button:hover {
     margin: 5px 0;
 }
 .fogo {
-    background-image: url('/imagens/gifs/fogo.gif');
+    background-image: url(imagens/churrasco_capa.jpg);
     background-size: cover;
     color: transparent;
     background-clip: text;
